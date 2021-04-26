@@ -1,0 +1,32 @@
+---
+title: "ostriches_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ostriches_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(blueostrich)
+library(ggplot2)
+```
+
+## An amazing plot!
+
+```{r}
+ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
+  geom_point() +
+  geom_text(aes(label = name), nudge_y = 1) +
+  theme_light() +
+  labs(x = "Height (m)",
+       y = "Mass (kg)",
+       title = "Ostrich size measurements")
+```
