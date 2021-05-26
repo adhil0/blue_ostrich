@@ -23,7 +23,7 @@ library(tidyverse)
 
 ## An amazing plot!
 
-```{r}
+```{r gg}
 ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
   geom_point() +
   geom_text(aes(label = name), nudge_y = 1) +
