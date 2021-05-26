@@ -34,5 +34,8 @@ ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
 ```
 
 ```{r}
+if (requireNamespace("htmltools", quietly = TRUE)) {
+  htmlwidgets::setWidgetIdSeed(99)
+}
 DT::datatable(ostriches)
 ```
