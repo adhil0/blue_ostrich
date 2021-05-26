@@ -12,10 +12,23 @@ LazyData: true
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.1.1
+Imports: 
+    leaflet,
+    heatmaply,
+    htmltools,
+    htmlwidgets,
+    DT,
+    plotly,
+    DiagrammeR,
+    MASS,
+    magrittr,
+    networkD3,
+    rbokeh,
+    highcharter
 Suggests: 
     knitr,
-    rmarkdown,
-    ggplot2
+    rmarkdown
 VignetteBuilder: knitr
 URL: https://github.com/allisonhorst/blueostrich
 BugReports: https://github.com/allisonhorst/blueostrich/issues
+ByteCompile: true

@@ -30,3 +30,7 @@ ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
        y = "Mass (kg)",
        title = "Ostrich size measurements")
 ```
+
+```{r}
+DT::datatable(tibble(SITE ="NWT", TIDY = emo::ji("check")))
+```
