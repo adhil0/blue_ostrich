@@ -33,7 +33,7 @@ ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
        title = "Ostrich size measurements")
 ```
 
-```{r, echo = FALSE}
+```{r DT, echo = FALSE}
 if (requireNamespace("htmltools", quietly = TRUE)) {
   htmlwidgets::setWidgetIdSeed(99)
 }
