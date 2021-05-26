@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(blueostrich)
-library(ggplot2)
+library(tidyverse)
 ```
 
 ## An amazing plot!
@@ -32,5 +32,5 @@ ggplot(data = ostriches, aes(x = height_m, y = mass_kg)) +
 ```
 
 ```{r}
-DT::datatable(tibble(SITE ="NWT", TIDY = emo::ji("check")))
+DT::datatable(ostriches)
 ```
