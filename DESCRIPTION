@@ -25,7 +25,8 @@ Suggests:
     rticles,
     rsconnect,
     rstudioapi,
-    DT
+    DT,
+    webshot
 VignetteBuilder: knitr
 URL: https://github.com/allisonhorst/blueostrich
 BugReports: https://github.com/allisonhorst/blueostrich/issues
