@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(blueostrich)
 library(tidyverse)
+library(leaflet)
 ```
 
 ## An amazing plot!
@@ -38,4 +39,15 @@ if (requireNamespace("htmltools", quietly = TRUE)) {
   htmlwidgets::setWidgetIdSeed(99)
 }
 DT::datatable(ostriches)
+```
+
+```{r}
+library(leaflet)
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(
+  lng=174.768,
+  lat=-36.852,
+  popup="The birthplace of R"
+)
 ```
