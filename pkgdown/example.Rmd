@@ -7,8 +7,6 @@ output:
     self_contained: false
 ---
 
-
 ```{r data}
-DT::datatable(tibble::tibble(Site = "NWT", Tidy = "check"))
+DT::datatable(tibble::tibble(iris))
 ```
-

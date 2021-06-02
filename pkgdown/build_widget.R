@@ -1,3 +1,7 @@
+# Heavily derived from https://github.com/glin/reactable/blob/master/pkgdown/build-docs.R
+
+devtools::build_readme() # Added
+
 pkgdown::build_site()
 
 index_html <- xml2::read_html("docs/index.html")
@@ -15,3 +19,6 @@ for (dep in rev(widget_deps)) {
 xml2::xml_replace(example, widget_html)
 
 xml2::write_html(index_html, "docs/index.html")
+
+# get rid
+pkgdown::preview_site()
