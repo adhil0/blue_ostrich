@@ -29,7 +29,7 @@ Suggests:
     webshot,
     devtools
 VignetteBuilder: knitr
-URL: https://github.com/allisonhorst/blueostrich
+URL: https://adhil0.github.io/blue_ostrich, https://github.com/allisonhorst/blueostrich
 BugReports: https://github.com/allisonhorst/blueostrich/issues
 SystemRequirements: pandoc
 RoxygenNote: 7.1.1

@@ -40,8 +40,7 @@ jobs:
 
       - name: Install package
         run: R CMD INSTALL .
-      - name: Build Home
-        run: Rscript pkgdown/build_widget.R
+
       - name: Deploy package
         run: |
           git config --local user.email "actions@github.com"
