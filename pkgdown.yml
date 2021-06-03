@@ -1,0 +1,10 @@
+pandoc: 2.7.3
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  ostriches_vignette: ostriches_vignette.html
+last_built: 2021-06-03T00:08Z
+urls:
+  reference: https://adhil0.github.io/blue_ostrich//reference
+  article: https://adhil0.github.io/blue_ostrich//articles
+
