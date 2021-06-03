@@ -17,10 +17,12 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install rmarkdown, remotes, and the local package
         run: |
-          install.packages(c("remotes", "DT", "tidyverse"))
+          install.packages(c("remotes", "DT", "tidyverse", "knitr"))
           remotes::install_local(".")
           remotes::install_cran("rmarkdown")
         shell: Rscript {0}
+      - name: Knit README
+        run: Rscript -e 'knitr::knit("README.Rmd')
       - name: Render README
         run: Rscript -e 'rmarkdown::render("README.Rmd")'
       - name: Commit results
