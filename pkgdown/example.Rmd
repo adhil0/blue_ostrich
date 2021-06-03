@@ -8,5 +8,5 @@ output:
 ---
 
 ```{r data}
-DT::datatable(tibble::tibble(USArrests))
+DT::datatable(tibble::tibble(mtcars))
 ```
