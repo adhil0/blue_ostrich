@@ -23,6 +23,7 @@ library(tidyverse)
 
 ```{r data, include = FALSE}
 DT::datatable(tibble::tibble(mtcars))
+
 ```
 
 <!-- pkgdown:example -->
